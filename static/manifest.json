@@ -1,11 +1,11 @@
 {
 	"name": "CodePan",
-  "short_name": "CodePan",
-  "start_url": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
+	"short_name": "CodePan",
+	"start_url": "./",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#fff",
+	"theme_color": "#673ab8",
 	"icons": [
 		{
 			"src": "\/favicon-36.png",
