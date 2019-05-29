@@ -287,7 +287,7 @@ export default {
               method: 'PATCH',
               params,
               data: {
-                description: `Try it online! https://codepan.net/gist/${
+                description: `Try it online! https://code.kana.dev/gist/${
                   data.id
                 }`
               }
