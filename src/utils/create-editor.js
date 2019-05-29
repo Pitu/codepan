@@ -27,6 +27,9 @@ export default function (el, opts = {}) {
     matchTags: { bothTags: true },
     matchBrackets: true,
     foldGutter: true,
+    indentWithTabs: true,
+    indentUnit: 4,
+    tabSize: 4,
     gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
     ...opts
   })
