@@ -129,18 +129,6 @@
           <el-dropdown-item style="padding: 0;">
             <a class="el-dropdown-menu__item fake-anchor" target="_blank" href="https://github.com/egoist/codepan"><link2-icon></link2-icon> Source Code</a>
           </el-dropdown-item>
-          <el-dropdown-item style="padding: 0;">
-            <a class="el-dropdown-menu__item fake-anchor" target="_blank" href="https://twitter.com/_egoistlily"><twitter-icon></twitter-icon> Follow me on Twitter</a>
-          </el-dropdown-item>
-          <el-dropdown-item style="padding: 0;">
-            <a
-              target="_blank"
-              class="el-dropdown-menu__item fake-anchor"
-              :href="`https://github.com/egoist/codepan/commit/${latestCommit}`">
-              <info-icon></info-icon>
-              {{ version }}
-            </a>
-          </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
       <a
@@ -281,14 +269,6 @@
             text: 'Token',
             handler: () => {
               this.promptGitHubToken()
-            }
-          }, {
-            text: 'OAuth',
-            type: 2,
-            handler: () => {
-              const loginURL = process.env.NODE_ENV === 'development' ? 'http://localhost:4001/login' : 'https://gh-login.codepan.net/login'
-
-              popup(loginURL, 'gh login', 600, 400)
             }
           }]
         })
